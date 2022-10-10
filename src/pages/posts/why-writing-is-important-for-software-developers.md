@@ -1,14 +1,12 @@
 ---
-title: "Why Writing is Important for Software Developers"
-date: "2021-08-04"
-slug: "why-writing-is-important-for-software-developers"
-description: "In this article I discuss the importance of being a good writer as a software developer."
-hero: "/images/writing-for-devs/fountain-pen.jpg"
-tags: ["career-advice", "writing"]
-layout: "../../layouts/BlogPostLayout.astro"
+title: 'Why Writing is Important for Software Developers'
+date: '2021-08-04'
+slug: 'why-writing-is-important-for-software-developers'
+description: 'In this article I discuss the importance of being a good writer as a software developer.'
+hero: '/images/writing-for-devs/fountain-pen.jpg'
+tags: ['career-advice', 'writing']
+layout: '../../layouts/BlogPostLayout.astro'
 ---
-
-Photo by <a href="https://unsplash.com/@aaronburden?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText" target="_blank">Aaron Burden</a> on <a href="https://unsplash.com/s/photos/writing?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText" target="_blank">Unsplash</a>
 
 ## Writing is thinking out loud.
 

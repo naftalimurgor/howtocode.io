@@ -1,14 +1,12 @@
 ---
-title: "How to manage your expectations while teaching yourself how to code"
-date: "2021-08-10"
-slug: "how-to-manage-your-expectations-while-teaching-yourself-how-to-code"
-description: "Why embracing being a beginner is the most important lesson for you to learn before teaching yourself how to code."
-hero: "/images/writing-for-devs/cockpit.jpg"
-tags: ["career-advice"]
-layout: "../../layouts/BlogPostLayout.astro"
+title: 'How to manage your expectations while teaching yourself how to code'
+date: '2021-08-10'
+slug: 'how-to-manage-your-expectations-while-teaching-yourself-how-to-code'
+description: 'Why embracing being a beginner is the most important lesson for you to learn before teaching yourself how to code.'
+hero: '/images/writing-for-devs/cockpit.jpg'
+tags: ['career-advice']
+layout: '../../layouts/BlogPostLayout.astro'
 ---
-
-Photo by <a href="https://unsplash.com/@franzharvin?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Franz Harvin Aceituna</a> on <a href="https://unsplash.com/@franzharvin?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
 
 Programming is hard. Don't let anyone tell you otherwise. This profession is not easy. Teaching yourself how to code, especially when you have no prior experience, can feel daunting and overwhelming. This is why one of the most important lessons you can learn before you begin this journey is to embrace being a beginner.
 

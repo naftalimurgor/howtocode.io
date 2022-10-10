@@ -1,12 +1,12 @@
 ---
-title: "Jamstack membership site with Eleventy & Memberstack"
-date: "2021-01-01"
-slug: "jamstack-eleventy-memberstack"
-description: "In this tutorial, we will build a membership site with Eleventy & Memberstack. We will then deploy it to Surge."
-hero: "/images/hero/understanding_the_jamstack_banner.png"
-youtube: "8MpPmSWXBX4"
-tags: ["understanding-the-jamstack"]
-layout: "../../layouts/BlogPostLayout.astro"
+title: 'Jamstack membership site with Eleventy & Memberstack'
+date: '2021-01-01'
+slug: 'jamstack-eleventy-memberstack'
+description: 'In this tutorial, we will build a membership site with Eleventy & Memberstack. We will then deploy it to Surge.'
+hero: '/images/hero/understanding_the_jamstack_banner.png'
+youtube: '8MpPmSWXBX4'
+tags: ['understanding-the-jamstack']
+layout: '../../layouts/BlogPostLayout.astro'
 ---
 
 For this project, we are going to be building a membership site using the [Eleventy](https://www.11ty.dev/) static site generator and [Memberstack](https://www.memberstack.com/). We will then deploy our membership site with [Surge](https://surge.sh/).
@@ -397,8 +397,6 @@ The entire `<nav>` should look like this.
 The entire `account.html` file should look like this.
 
 ```html
-{% extends "layouts/base.html" %} {% block content %}
-
 <div
   data-collapse="medium"
   data-animation="default"
@@ -433,8 +431,6 @@ The entire `account.html` file should look like this.
     </ul>
   </div>
 </div>
-
-{% endblock %}
 ```
 
 With that in place, let's push our latest changes to Surge and test.

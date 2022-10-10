@@ -66,6 +66,36 @@ export const navigation = [
         title: 'What is Zettelkasten?',
         href: '/posts/what-is-zettelkasten',
       },
+      {
+        title:
+          'How to manage your expectations while teaching yourself how to code',
+        href: '/posts/how-to-manage-your-expectations-while-teaching-yourself-how-to-code',
+      },
+      {
+        title: 'Why Writing is Important for Software Developers',
+        href: '/posts/why-writing-is-important-for-software-developers',
+      },
+      {
+        title: 'How I became a web developer in 5 months',
+        href: '/posts/how-i-taught-myself-how-to-code',
+      },
+    ],
+  },
+  {
+    title: 'Jamstack',
+    links: [
+      {
+        title: 'Membership site with Eleventy & Memberstack',
+        href: '/posts/jamstack-eleventy-memberstack',
+      },
+      {
+        title: 'Ecommerce site with Gatsby & Stripe Checkout',
+        href: '/posts/jamstack-gatsby-stripe-ecommerce',
+      },
+      {
+        title: 'Blog with Hugo, Netlify CMS and Zapier',
+        href: '/posts/jamstack-hugo-netlify-zapier',
+      },
     ],
   },
 ]
