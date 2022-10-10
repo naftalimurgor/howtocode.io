@@ -1,7 +1,21 @@
 export const navigation = [
   {
-    title: 'Introduction',
-    links: [{ title: 'Welcome', href: '/' }],
+    title: 'Navigation',
+    links: [
+      { title: 'Welcome', href: '/' },
+      { title: 'Free books', href: '/posts/free-books' },
+      { title: 'Free courses', href: '/posts/free-courses' },
+      {
+        title: 'Podcast',
+        href: 'https://anchor.fm/how-to-code',
+        target: '_blank',
+      },
+      {
+        title: 'Newsletter',
+        href: 'https://www.getrevue.co/profile/howtocode_io',
+        target: '_blank',
+      },
+    ],
   },
   {
     title: 'Next.js (work in progress)',
