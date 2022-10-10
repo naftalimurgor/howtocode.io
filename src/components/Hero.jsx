@@ -52,13 +52,13 @@ export function Hero() {
               </p>
               <div className="mt-8 flex gap-4 md:justify-center lg:justify-start">
                 {/* <Button href="/">Get started</Button> */}
-                <Button
+                {/* <Button
                   href="https://github.com/robertguss/howtocode-tailwindui-syntax"
                   variant="secondary"
                   target="_blank"
                 >
                   View on GitHub
-                </Button>
+                </Button> */}
               </div>
             </div>
           </div>
