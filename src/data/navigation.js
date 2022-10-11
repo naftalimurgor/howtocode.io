@@ -1,8 +1,11 @@
 export const navigation = [
   {
-    title: 'Navigation',
+    title: 'Home',
+    links: [{ title: 'Welcome', href: '/' }],
+  },
+  {
+    title: 'Free Resources',
     links: [
-      { title: 'Welcome', href: '/' },
       { title: 'Free books', href: '/posts/free-books' },
       { title: 'Free courses', href: '/posts/free-courses' },
       {
