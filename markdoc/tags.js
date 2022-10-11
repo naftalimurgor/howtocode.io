@@ -1,7 +1,15 @@
+import YouTube from '@/components/YouTube'
 import { Callout } from '@/components/Callout'
 import { QuickLink, QuickLinks } from '@/components/QuickLinks'
 
 const tags = {
+  youtube: {
+    selfClosing: true,
+    attributes: {
+      id: { type: String },
+    },
+    render: YouTube,
+  },
   callout: {
     attributes: {
       title: { type: String },

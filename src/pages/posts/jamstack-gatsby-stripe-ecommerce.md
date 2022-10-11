@@ -1,13 +1,15 @@
 ---
-title: "Jamstack ecommerce site with Gatsby & Stripe Checkout"
-date: "2021-01-02"
-slug: "jamstack-gatsby-stripe-ecommerce"
-description: "In this tutorial, we will build an e-commerce site with Gatsby and Stripe checkout. We will then deploy it to Vercel."
-hero: "/images/hero/understanding_the_jamstack_banner.png"
-youtube: "LhhxQGdm3uo"
-tags: ["understanding-the-jamstack"]
-layout: "../../layouts/BlogPostLayout.astro"
+title: 'Jamstack ecommerce site with Gatsby & Stripe Checkout'
+date: '2021-01-02'
+slug: 'jamstack-gatsby-stripe-ecommerce'
+description: 'In this tutorial, we will build an e-commerce site with Gatsby and Stripe checkout. We will then deploy it to Vercel.'
+hero: '/images/hero/understanding_the_jamstack_banner.png'
+youtube: 'LhhxQGdm3uo'
+tags: ['understanding-the-jamstack']
+layout: '../../layouts/BlogPostLayout.astro'
 ---
+
+{% youtube id="LhhxQGdm3uo" / %}
 
 > This project builds on top of the [Gatsby E-commerce Tutorial](https://www.gatsbyjs.com/tutorial/ecommerce-tutorial) provided in the official Gatsby docs, and the [Use Shopping Cart Example repo](https://github.com/dayhaysoos/use-shopping-cart/tree/master/examples/gatsby).
 
@@ -98,8 +100,8 @@ module.exports = {
     {
       resolve: `gatsby-source-stripe`,
       options: {
-        objects: ["Price"],
-        secretKey: "secret key goes here",
+        objects: ['Price'],
+        secretKey: 'secret key goes here',
         downloadFiles: false,
       },
     },
@@ -211,7 +213,7 @@ Create a new file in `src/utils/stripejs.js` and add the following.
 _**you will need to create the `utils` folder as well**_
 
 ```js
-import { loadStripe } from "@stripe/stripe-js"
+import { loadStripe } from '@stripe/stripe-js'
 
 let stripePromise
 const getStripe = () => {
@@ -247,16 +249,16 @@ _**The following code comes from the [Use Shopping Cart Example Gatsby Repo](htt
 Withing `/pages/index.js`, add the following.
 
 ```js
-import React from "react"
+import React from 'react'
 
-import Layout from "../components/layout"
-import SEO from "../components/seo"
+import Layout from '../components/layout'
+import SEO from '../components/seo'
 
-import Skus from "../components/Products/Skus"
-import CartOverview from "../components/CartOverview"
+import Skus from '../components/Products/Skus'
+import CartOverview from '../components/CartOverview'
 
-import { loadStripe } from "@stripe/stripe-js"
-import { CartProvider } from "use-shopping-cart"
+import { loadStripe } from '@stripe/stripe-js'
+import { CartProvider } from 'use-shopping-cart'
 
 const stripePromise = loadStripe(process.env.GATSBY_STRIPE_PUBLISHABLE_KEY)
 
@@ -265,7 +267,7 @@ const CartExample = () => (
     <SEO title="Cart Example" />
     <h1>Checkout with cart example</h1>
     <h2>
-      With{" "}
+      With{' '}
       <a href="https://use-shopping-cart.netlify.app/">use-shopping-cart</a>
     </h2>
     <CartProvider
@@ -274,7 +276,7 @@ const CartExample = () => (
       successUrl={`${window.location.origin}/page-2/`}
       cancelUrl={`${window.location.origin}/`}
       currency="USD"
-      allowedCountries={["US", "GB", "CA"]}
+      allowedCountries={['US', 'GB', 'CA']}
       billingAddressCollection={true}
     >
       <CartOverview />
@@ -295,7 +297,7 @@ export default CartExample
   successUrl={`${window.location.origin}/page-2/`} // the url to redirect to after a successful purchase
   cancelUrl={`${window.location.origin}/`} // the url to redirect to when they cancel a purchase
   currency="USD" // US Dollars is the type of currency we are accepting
-  allowedCountries={["US", "GB", "CA"]}
+  allowedCountries={['US', 'GB', 'CA']}
   billingAddressCollection={true} // allows the collection of the users billing address for Stripe
 >
   <CartOverview /> // We will create and go over this component later
@@ -309,16 +311,16 @@ Create a new folder called `Products` inside the `src/components folder` and cre
 
 ```js
 // src/components/Products/Skus.js
-import React from "react"
-import { graphql, StaticQuery } from "gatsby"
-import SkuCard from "./SkuCard"
+import React from 'react'
+import { graphql, StaticQuery } from 'gatsby'
+import SkuCard from './SkuCard'
 
 const conatinerStyles = {
-  display: "flex",
-  flexDirection: "row",
-  flexWrap: "wrap",
-  justifyContent: "space-between",
-  padding: "1rem 0 1rem 0",
+  display: 'flex',
+  flexDirection: 'row',
+  flexWrap: 'wrap',
+  justifyContent: 'space-between',
+  padding: '1rem 0 1rem 0',
 }
 
 export default (props) => (
@@ -415,32 +417,32 @@ Create a new file called `SkuCard.js` in the `src/components/Products` folder.
 
 ```js
 // src/components/Products/SkuCard.js
-import React from "react"
+import React from 'react'
 
-import { useShoppingCart, formatCurrencyString } from "use-shopping-cart"
+import { useShoppingCart, formatCurrencyString } from 'use-shopping-cart'
 
 const cardStyles = {
-  display: "flex",
-  flexDirection: "column",
-  justifyContent: "space-around",
-  alignItems: "flex-start",
-  padding: "1rem",
-  marginBottom: "1rem",
-  boxShadow: "5px 5px 25px 0 rgba(46,61,73,.2)",
-  backgroundColor: "#fff",
-  borderRadius: "6px",
-  maxWidth: "300px",
+  display: 'flex',
+  flexDirection: 'column',
+  justifyContent: 'space-around',
+  alignItems: 'flex-start',
+  padding: '1rem',
+  marginBottom: '1rem',
+  boxShadow: '5px 5px 25px 0 rgba(46,61,73,.2)',
+  backgroundColor: '#fff',
+  borderRadius: '6px',
+  maxWidth: '300px',
 }
 const buttonStyles = {
-  fontSize: "13px",
-  textAlign: "center",
-  color: "#fff",
-  outline: "none",
-  padding: "12px",
-  boxShadow: "2px 5px 10px rgba(0,0,0,.1)",
-  backgroundColor: "rgb(255, 178, 56)",
-  borderRadius: "6px",
-  letterSpacing: "1.5px",
+  fontSize: '13px',
+  textAlign: 'center',
+  color: '#fff',
+  outline: 'none',
+  padding: '12px',
+  boxShadow: '2px 5px 10px rgba(0,0,0,.1)',
+  backgroundColor: 'rgb(255, 178, 56)',
+  borderRadius: '6px',
+  letterSpacing: '1.5px',
 }
 
 const SkuCard = ({ sku }) => {
@@ -451,7 +453,7 @@ const SkuCard = ({ sku }) => {
       <img src={sku.image} alt="" />
       <h4>{sku.name}</h4>
       <p>
-        Price:{" "}
+        Price:{' '}
         {formatCurrencyString({
           value: parseInt(sku.price),
           currency: sku.currency,
@@ -478,20 +480,20 @@ Lastly, we will create a component for our shopping cart.
 ```js
 // src/components/CartOverview.js
 
-import React, { useState } from "react"
+import React, { useState } from 'react'
 
-import { useShoppingCart } from "use-shopping-cart"
+import { useShoppingCart } from 'use-shopping-cart'
 
 const buttonStyles = {
-  fontSize: "13px",
-  textAlign: "center",
-  color: "#fff",
-  outline: "none",
-  padding: "12px",
-  boxShadow: "2px 5px 10px rgba(0,0,0,.1)",
-  backgroundColor: "rgb(255, 178, 56)",
-  borderRadius: "6px",
-  letterSpacing: "1.5px",
+  fontSize: '13px',
+  textAlign: 'center',
+  color: '#fff',
+  outline: 'none',
+  padding: '12px',
+  boxShadow: '2px 5px 10px rgba(0,0,0,.1)',
+  backgroundColor: 'rgb(255, 178, 56)',
+  borderRadius: '6px',
+  letterSpacing: '1.5px',
 }
 
 const Cart = () => {
@@ -515,7 +517,7 @@ const Cart = () => {
           redirectToCheckout()
         }}
       >
-        {loading ? "Loading..." : "Checkout"}
+        {loading ? 'Loading...' : 'Checkout'}
       </button>
       <button style={buttonStyles} onClick={clearCart}>
         Clear cart

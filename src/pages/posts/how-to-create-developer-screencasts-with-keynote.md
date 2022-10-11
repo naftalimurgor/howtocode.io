@@ -17,9 +17,9 @@ I use a Mac, so all of the information and software mentioned in this article wi
 
 Before explaining the methods, tools, and techniques I use to create these screencasts, I thought it would be helpful to share a few examples. Please watch them to determine if this is something you are interested in learning more about.
 
-<YouTube id="USX6AntcPyg" />
-<YouTube id="N0TOFWy1Xvg" />
-<YouTube id="Fohrq5GZSD8" />
+{% youtube id="USX6AntcPyg" / %}
+{% youtube id="N0TOFWy1Xvg" / %}
+{% youtube id="Fohrq5GZSD8" / %}
 
 Now that you have seen a few examples let’s break down the steps involved in creating them.
 
@@ -35,7 +35,7 @@ Once the script is complete, I split the script into multiple parts or sections.
 
 In the video below, I broke the script into nine different sections.
 
-<YouTube id="Fohrq5GZSD8" />
+{% youtube id="Fohrq5GZSD8" / %}
 
 Here is what the script looks like:
 

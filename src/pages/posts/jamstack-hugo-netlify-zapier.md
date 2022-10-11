@@ -1,13 +1,15 @@
 ---
-title: "Jamstack blog with Hugo, Netlify CMS and Zapier"
-date: "2020-12-29"
-slug: "jamstack-hugo-netlify-zapier"
-description: "In this tutorial, we will build a blog with Hugo and Netlify CMS. We will then deploy our site to Netlify and use Zapier to automate our deploys."
-hero: "/images/hero/understanding_the_jamstack_banner.png"
-youtube: "bY-CggQf9B8"
-tags: ["understanding-the-jamstack"]
-layout: "../../layouts/BlogPostLayout.astro"
+title: 'Jamstack blog with Hugo, Netlify CMS and Zapier'
+date: '2020-12-29'
+slug: 'jamstack-hugo-netlify-zapier'
+description: 'In this tutorial, we will build a blog with Hugo and Netlify CMS. We will then deploy our site to Netlify and use Zapier to automate our deploys.'
+hero: '/images/hero/understanding_the_jamstack_banner.png'
+youtube: 'bY-CggQf9B8'
+tags: ['understanding-the-jamstack']
+layout: '../../layouts/BlogPostLayout.astro'
 ---
+
+{% youtube id="bY-CggQf9B8" / %}
 
 We will be building a blog using the [Hugo](https://gohugo.io) Static Site Generator and then deploy it to Netlify. Once our blog is complete and lives on Netlify, we will then integrate [Zapier](https://zapier.com/) to trigger our site's automatic CI/CD pipelines. Zapier will allow us to write blog posts ahead of time by setting a publish date sometime in the future. It will then notify Netlify to build our site so that the entire process is automated.
 
@@ -73,9 +75,9 @@ If you open up one of the sample posts, you will see something like the followin
 
 ```yaml
 ---
-title: "Markdown Syntax Guide"
-date: "2019-03-11"
-description: "Sample article showcasing basic Markdown syntax."
+title: 'Markdown Syntax Guide'
+date: '2019-03-11'
+description: 'Sample article showcasing basic Markdown syntax.'
 tags: [markdown, CSS, HTML, themes]
 categories: [themes, syntax]
 ---
@@ -265,17 +267,17 @@ For our blog, add the following to `config.yml`.
 
 ```yaml
 collections: # A list of collections the CMS should be able to edit
-  - name: "post" # Used in routes, ie.: /admin/collections/:slug/edit
-    label: "Post" # Used in the UI, ie.: "New Post"
-    folder: "content/posts" # The path to the folder where the documents are stored
+  - name: 'post' # Used in routes, ie.: /admin/collections/:slug/edit
+    label: 'Post' # Used in the UI, ie.: "New Post"
+    folder: 'content/posts' # The path to the folder where the documents are stored
     create: true # Allow users to create new documents in this collection
     fields: # The fields each document in this collection have
-      - { label: "Title", name: "title", widget: "string" }
-      - { label: "Publish Date", name: "date", widget: "datetime" }
-      - { label: "Description", name: "description", widget: "text" }
-      - { label: "Body", name: "body", widget: "markdown" }
-      - { label: "Tags", name: "tags", widget: "list" }
-      - { label: "Categories", name: "categories", widget: "list" }
+      - { label: 'Title', name: 'title', widget: 'string' }
+      - { label: 'Publish Date', name: 'date', widget: 'datetime' }
+      - { label: 'Description', name: 'description', widget: 'text' }
+      - { label: 'Body', name: 'body', widget: 'markdown' }
+      - { label: 'Tags', name: 'tags', widget: 'list' }
+      - { label: 'Categories', name: 'categories', widget: 'list' }
 ```
 
 The entire file should look like this:
@@ -285,24 +287,24 @@ backend:
   name: git-gateway
 
 collections: # A list of collections the CMS should be able to edit
-  - name: "post" # Used in routes, ie.: /admin/collections/:slug/edit
-    label: "Post" # Used in the UI, ie.: "New Post"
-    folder: "content/posts" # The path to the folder where the documents are stored
+  - name: 'post' # Used in routes, ie.: /admin/collections/:slug/edit
+    label: 'Post' # Used in the UI, ie.: "New Post"
+    folder: 'content/posts' # The path to the folder where the documents are stored
     create: true # Allow users to create new documents in this collection
     fields: # The fields each document in this collection have
-      - { label: "Title", name: "title", widget: "string" }
-      - { label: "Publish Date", name: "date", widget: "datetime" }
-      - { label: "Description", name: "description", widget: "text" }
-      - { label: "Body", name: "body", widget: "markdown" }
-      - { label: "Tags", name: "tags", widget: "list" }
-      - { label: "Categories", name: "categories", widget: "list" }
+      - { label: 'Title', name: 'title', widget: 'string' }
+      - { label: 'Publish Date', name: 'date', widget: 'datetime' }
+      - { label: 'Description', name: 'description', widget: 'text' }
+      - { label: 'Body', name: 'body', widget: 'markdown' }
+      - { label: 'Tags', name: 'tags', widget: 'list' }
+      - { label: 'Categories', name: 'categories', widget: 'list' }
 ```
 
 Finally, we need to let Netlify CMS know where to put the images that we upload. We can do so by adding the following to our config.
 
 ```yaml
-media_folder: "static/images/uploads" # Folder where user uploaded files should go
-public_folder: "/images/uploads"
+media_folder: 'static/images/uploads' # Folder where user uploaded files should go
+public_folder: '/images/uploads'
 ```
 
 The entire file should now look like this:
@@ -311,21 +313,21 @@ The entire file should now look like this:
 backend:
   name: git-gateway
 
-media_folder: "static/images/uploads" # Folder where user uploaded files should go
-public_folder: "/images/uploads"
+media_folder: 'static/images/uploads' # Folder where user uploaded files should go
+public_folder: '/images/uploads'
 
 collections: # A list of collections the CMS should be able to edit
-  - name: "post" # Used in routes, ie.: /admin/collections/:slug/edit
-    label: "Post" # Used in the UI, ie.: "New Post"
-    folder: "content/posts" # The path to the folder where the documents are stored
+  - name: 'post' # Used in routes, ie.: /admin/collections/:slug/edit
+    label: 'Post' # Used in the UI, ie.: "New Post"
+    folder: 'content/posts' # The path to the folder where the documents are stored
     create: true # Allow users to create new documents in this collection
     fields: # The fields each document in this collection have
-      - { label: "Title", name: "title", widget: "string" }
-      - { label: "Publish Date", name: "date", widget: "datetime" }
-      - { label: "Description", name: "description", widget: "text" }
-      - { label: "Body", name: "body", widget: "markdown" }
-      - { label: "Tags", name: "tags", widget: "list" }
-      - { label: "Categories", name: "categories", widget: "list" }
+      - { label: 'Title', name: 'title', widget: 'string' }
+      - { label: 'Publish Date', name: 'date', widget: 'datetime' }
+      - { label: 'Description', name: 'description', widget: 'text' }
+      - { label: 'Body', name: 'body', widget: 'markdown' }
+      - { label: 'Tags', name: 'tags', widget: 'list' }
+      - { label: 'Categories', name: 'categories', widget: 'list' }
 ```
 
 Now let's push up our changes to that our latest code is on Netlify.
@@ -466,10 +468,10 @@ Add the following snippet to `/themes/ink/layouts/partials/footer.html.`
 ```html
 <script>
   if (window.netlifyIdentity) {
-    window.netlifyIdentity.on("init", (user) => {
+    window.netlifyIdentity.on('init', (user) => {
       if (!user) {
-        window.netlifyIdentity.on("login", () => {
-          document.location.href = "/admin/"
+        window.netlifyIdentity.on('login', () => {
+          document.location.href = '/admin/'
         })
       }
     })
@@ -499,10 +501,10 @@ The entire file should now look like:
 
 <script>
   if (window.netlifyIdentity) {
-    window.netlifyIdentity.on("init", (user) => {
+    window.netlifyIdentity.on('init', (user) => {
       if (!user) {
-        window.netlifyIdentity.on("login", () => {
-          document.location.href = "/admin/"
+        window.netlifyIdentity.on('login', () => {
+          document.location.href = '/admin/'
         })
       }
     })
