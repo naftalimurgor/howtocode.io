@@ -23,7 +23,6 @@ export const navigation = [
   {
     title: 'Next.js (work in progress)',
     links: [
-      { title: 'Intro', href: '/posts/nextjs-a-new-series' },
       {
         title: '1. Install and overview',
         href: '/posts/nextjs-install-and-overview',
