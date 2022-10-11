@@ -6,8 +6,6 @@ description: Free tutorials, books, and courses on web development, programming,
 
 Free tutorials, books, and courses on web development, programming, and computer science. {% .lead %}
 
-## Free resources
-
 {% quick-links %}
 
 {% quick-link title="Free Books" icon="installation" href="/posts/free-books" description="Download Go Basics and Understanding the Jamstack for free." /%}
