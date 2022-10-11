@@ -1,10 +1,10 @@
 ---
-title: "Next.js - 2. Pages and pre-rendering"
-date: "2022-10-03"
-slug: "nextjs-pages-and-pre-rendering"
-description: "In this article, I discuss how pages work in Next.js. I also discuss the two different types of pre-rendering and how to fetch data within pages."
-hero: "/images/hero/nextjs-cover-dark.png"
-tags: ["nextjs"]
+title: 'Next.js - 2. Pages and pre-rendering'
+date: '2022-10-03'
+slug: 'nextjs-pages-and-pre-rendering'
+description: 'In this article, I discuss how pages work in Next.js. I also discuss the two different types of pre-rendering and how to fetch data within pages.'
+hero: '/images/hero/nextjs-cover-dark.png'
+tags: ['nextjs']
 ---
 
 This article will teach you how pages and pre-rendering work in Next.js.
@@ -52,9 +52,9 @@ You can create pages that support dynamic routes by using a special bracket synt
 - `posts/3`
 - etc.
 
-:::info
+{% callout type="note" title="" %}
 You can use whatever name you like within the brackets. I am using “id” in this example, but you can use anything you want.
-:::
+{% /callout %}
 
 You will see a working example of dynamic routes shortly.
 
@@ -108,7 +108,7 @@ function Post({ post }) {
 }
 
 export async function getStaticPaths() {
-  const res = await fetch("https://jsonplaceholder.typicode.com/posts")
+  const res = await fetch('https://jsonplaceholder.typicode.com/posts')
   const posts = await res.json()
 
   const paths = posts.map((post) => ({
@@ -151,7 +151,7 @@ Next, we have the `getStaticPaths()` function.
 
 ```jsx
 export async function getStaticPaths() {
-  const res = await fetch("https://jsonplaceholder.typicode.com/posts")
+  const res = await fetch('https://jsonplaceholder.typicode.com/posts')
   const posts = await res.json()
 
   const paths = posts.map((post) => ({
@@ -162,14 +162,14 @@ export async function getStaticPaths() {
 }
 ```
 
-:::info
+{% callout type="note" title="" %}
 It can be helpful to use `console.log()` to log out the variables to better understand what is happening.
-:::
+{% /callout %}
 
 Inside this function, we are fetching the posts from our API.
 
 ```jsx
-const res = await fetch("https://jsonplaceholder.typicode.com/posts")
+const res = await fetch('https://jsonplaceholder.typicode.com/posts')
 ```
 
 Then, we convert the response into a JS object.
@@ -190,7 +190,7 @@ If you `console.log()` the paths variable, you will see the following in your te
 
 ```jsx
 export async function getStaticPaths() {
-  const res = await fetch("https://jsonplaceholder.typicode.com/posts")
+  const res = await fetch('https://jsonplaceholder.typicode.com/posts')
   const posts = await res.json()
 
   const paths = posts.map((post) => ({

@@ -1,10 +1,10 @@
 ---
-title: "Next.js - 1. Install & overview"
-date: "2022-09-30"
-slug: "nextjs-install-and-overview"
-description: "In this article, I discuss how to install Next.js and give a brief overview of the framework."
-hero: "/images/hero/nextjs-cover-dark.png"
-tags: ["nextjs"]
+title: 'Next.js - 1. Install & overview'
+date: '2022-09-30'
+slug: 'nextjs-install-and-overview'
+description: 'In this article, I discuss how to install Next.js and give a brief overview of the framework.'
+hero: '/images/hero/nextjs-cover-dark.png'
+tags: ['nextjs']
 ---
 
 ## Install
@@ -17,9 +17,9 @@ To create a new Next.js app, enter the following in your terminal:
 npx create-next-app@latest
 ```
 
-:::info
+{% callout type="note" title="" %}
 You can also use [Yarn](https://yarnpkg.com/) or [PNPM](https://pnpm.io/) and even configure Next.js to use [TypeScript](https://www.typescriptlang.org/) if you would like. Please check out their [docs](https://nextjs.org/docs/getting-started).
-:::
+{% /callout %}
 
 The CLI will ask you to name your project and install all the dependencies. Next, `cd` into your Next.js app.
 

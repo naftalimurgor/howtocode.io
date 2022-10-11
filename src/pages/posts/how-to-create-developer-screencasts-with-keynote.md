@@ -1,21 +1,17 @@
 ---
-title: "How to Create Developer Screencasts with Keynote"
-date: "2022-05-05"
-slug: "how-to-create-developer-screencasts-with-keynote"
-description: "In this article, I will show you how I create developer screencasts with Keynote."
-hero: "/images/how-to-create-developer-screencasts-with-keynote/hero.png"
-tags: ["screencast", "developer"]
+title: 'How to Create Developer Screencasts with Keynote'
+date: '2022-05-05'
+slug: 'how-to-create-developer-screencasts-with-keynote'
+description: 'In this article, I will show you how I create developer screencasts with Keynote.'
+hero: '/images/how-to-create-developer-screencasts-with-keynote/hero.png'
+tags: ['screencast', 'developer']
 ---
 
 In this article, I will show you how I create screencasts for developers using Keynote.
 
-:::info
-**None** of the links in this article are affiliate links.
-:::
-
-:::tip
+{% callout type="note" title="" %}
 I use a Mac, so all of the information and software mentioned in this article will be specific to Mac.
-:::
+{% /callout %}
 
 ## Screencast Examples
 
@@ -43,9 +39,9 @@ In the video below, I broke the script into nine different sections.
 
 Here is what the script looks like:
 
-:::tip
+{% callout type="note" title="" %}
 You can click on the image to see a larger version.
-:::
+{% /callout %}
 
 ![](/images/how-to-create-developer-screencasts-with-keynote/script-example.png)
 
