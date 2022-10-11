@@ -1,5 +1,8 @@
 import { Fragment } from 'react'
+import Prism from 'prism-react-renderer/prism'
 import Highlight, { defaultProps } from 'prism-react-renderer'
+;(typeof global !== 'undefined' ? global : window).Prism = Prism
+require('prismjs/components/prism-elixir')
 
 export function Fence({ children, language }) {
   return (
