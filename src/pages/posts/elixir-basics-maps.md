@@ -1,11 +1,11 @@
 ---
-title: "Elixir Basics - 5. Maps"
-date: "2021-10-21"
-slug: "elixir-basics-maps"
-description: "In this article, we are going to learn how maps work in Elixir."
-hero: "/images/elixir-basics/cover-purple.png"
-tags: ["elixir-basics"]
-layout: "../../layouts/BlogPostLayout.astro"
+title: 'Elixir Basics - 5. Maps'
+date: '2021-10-21'
+slug: 'elixir-basics-maps'
+description: 'In this article, we are going to learn how maps work in Elixir.'
+hero: '/images/elixir-basics/cover-purple.png'
+tags: ['elixir-basics']
+layout: '../../layouts/BlogPostLayout.astro'
 ---
 
 Maps in Elixir are the primary data structure for key/value pairs. Unlike a keyword list, they allow keys of any time and are un-ordered. Maps can be created like so:
