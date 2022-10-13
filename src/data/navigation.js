@@ -31,6 +31,10 @@ export const navigation = [
         title: '2. Pages and pre-rendering',
         href: '/posts/nextjs-pages-and-pre-rendering',
       },
+      {
+        title: '3. API routes',
+        href: '/posts/nextjs-api-routes',
+      },
     ],
   },
   {
