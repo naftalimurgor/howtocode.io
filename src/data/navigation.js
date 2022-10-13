@@ -31,23 +31,72 @@ export const navigation = [
         title: '2. Pages and pre-rendering',
         href: '/posts/nextjs-pages-and-pre-rendering',
       },
+      {
+        title: '3. API routes',
+        href: '/posts/nextjs-api-routes',
+      },
     ],
   },
   {
-    title: 'Cypress',
+    title: 'Astro (work in progress)',
     links: [
       {
-        title: 'Real World Testing with Cypress',
-        href: '/posts/real-world-testing-with-cypress',
-      },
-      {
-        title: 'Real World App',
-        href: '/posts/cypress-real-world-app',
+        title: '1. Overview & Intro',
+        href: '/posts/astro-static-site-generator-overview',
       },
     ],
   },
   {
-    title: 'Elixir Basics',
+    title: 'Go',
+    links: [
+      {
+        title: '1. Installing Go on a Mac',
+        href: '/posts/go-basics-1-installing-go-on-a-mac',
+      },
+      {
+        title: '2. Variables',
+        href: '/posts/go-basics-2-variables-in-go',
+      },
+      {
+        title: '3. Primitives',
+        href: '/posts/go-basics-3-primitives-in-go',
+      },
+      {
+        title: '4. Constants',
+        href: '/posts/go-basics-4-constants-in-go',
+      },
+      {
+        title: '5. Arrays & Slices',
+        href: '/posts/go-basics-5-arrays-and-slices-in-go',
+      },
+      {
+        title: '6. Maps',
+        href: '/posts/go-basics-6-maps-in-go',
+      },
+      {
+        title: '7. Structs',
+        href: '/posts/go-basics-7-structs-in-go',
+      },
+      {
+        title: '8. Control flow',
+        href: '/posts/go-basics-8-control-flow-in-go',
+      },
+      {
+        title: '9. Loops',
+        href: '/posts/go-basics-9-loops-in-go',
+      },
+      {
+        title: '10. Pointers',
+        href: '/posts/go-basics-10-pointers-in-go',
+      },
+      {
+        title: '11. Functions',
+        href: '/posts/go-basics-11-functions-in-go',
+      },
+    ],
+  },
+  {
+    title: 'Elixir',
     links: [
       {
         title: '1. Basic Data Types',
@@ -72,11 +121,15 @@ export const navigation = [
     ],
   },
   {
-    title: 'Astro (work in progress)',
+    title: 'Cypress',
     links: [
       {
-        title: '1. Overview & Intro',
-        href: '/posts/astro-static-site-generator-overview',
+        title: 'Real World Testing with Cypress',
+        href: '/posts/real-world-testing-with-cypress',
+      },
+      {
+        title: 'Real World App',
+        href: '/posts/cypress-real-world-app',
       },
     ],
   },
@@ -200,55 +253,6 @@ export const navigation = [
       {
         title: '8. Footer Section & PurgeCSS',
         href: '/posts/tailwind-css-travel-site-8-footer-purgecss',
-      },
-    ],
-  },
-  {
-    title: 'Go',
-    links: [
-      {
-        title: '1. Installing Go on a Mac',
-        href: '/posts/go-basics-1-installing-go-on-a-mac',
-      },
-      {
-        title: '2. Variables',
-        href: '/posts/go-basics-2-variables-in-go',
-      },
-      {
-        title: '3. Primitives',
-        href: '/posts/go-basics-3-primitives-in-go',
-      },
-      {
-        title: '4. Constants',
-        href: '/posts/go-basics-4-constants-in-go',
-      },
-      {
-        title: '5. Arrays & Slices',
-        href: '/posts/go-basics-5-arrays-and-slices-in-go',
-      },
-      {
-        title: '6. Maps',
-        href: '/posts/go-basics-6-maps-in-go',
-      },
-      {
-        title: '7. Structs',
-        href: '/posts/go-basics-7-structs-in-go',
-      },
-      {
-        title: '8. Control flow',
-        href: '/posts/go-basics-8-control-flow-in-go',
-      },
-      {
-        title: '9. Loops',
-        href: '/posts/go-basics-9-loops-in-go',
-      },
-      {
-        title: '10. Pointers',
-        href: '/posts/go-basics-10-pointers-in-go',
-      },
-      {
-        title: '11. Functions',
-        href: '/posts/go-basics-11-functions-in-go',
       },
     ],
   },

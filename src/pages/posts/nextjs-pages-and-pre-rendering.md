@@ -7,7 +7,15 @@ hero: '/images/hero/nextjs-cover-dark.png'
 tags: ['nextjs']
 ---
 
-This article will teach you how pages and pre-rendering work in Next.js.
+{% callout type="note" title="What you'll learn" %}
+In this article you will learn the following:
+
+- How pages work in Next.js
+- How to create dynamic pages and routes
+- Two different ways to pre-render pages, static generation and server-side rendering
+- How to create static pages with data using `getStaticPaths()` and `getStaticProps()`
+
+{% /callout %}
 
 ## Pages
 
@@ -246,4 +254,9 @@ If you are rendering content server-side, then instead of using `getStaticProps(
 
 ## Wrap up
 
-In this article, you learned how pages work in Next.js. You also learned about dynamic routes and the two different ways you can pre-render content with Next, static generation, and SSR. Finally, you learned how to generate static pages with data using the `getStaticPaths()` and `getStaticProps()` functions.
+In this article you learned the following:
+
+- How pages work in Next.js
+- How to create dynamic pages and routes
+- Two different ways to pre-render pages, static generation and server-side rendering
+- How to create static pages with data using `getStaticPaths()` and `getStaticProps()`

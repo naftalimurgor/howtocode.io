@@ -7,7 +7,16 @@ hero: '/images/hero/nextjs-cover-dark.png'
 tags: ['nextjs']
 ---
 
-## Install
+{% callout type="note" title="What you'll learn" %}
+In this article you will learn the following:
+
+- How to create a new Next.js application.
+- The basic file structure of a Next.js app.
+- The four npm scripts or commands for developing and building a Next.js app.
+
+{% /callout %}
+
+## Create a Next.js app
 
 Before creating a Next.js app, you must first install [Node.js](https://nodejs.org/en/). I recommend installing the latest Long Term Support (LTS) version as it is the most stable and well-supported.
 
