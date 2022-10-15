@@ -164,11 +164,11 @@ export const navigation = [
       },
       {
         title: 'How to become a Front-End developer',
-        href: 'how-to-become-a-front-end-developer',
+        href: '/posts/how-to-become-a-front-end-developer',
       },
       {
         title: 'How to become a Back-End developer',
-        href: 'how-to-become-a-back-end-developer',
+        href: '/posts/how-to-become-a-back-end-developer',
       },
       {
         title:
