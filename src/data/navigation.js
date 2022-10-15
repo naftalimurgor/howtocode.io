@@ -270,7 +270,7 @@ export const navigation = [
     links: [
       {
         title: 'How to customize your sitemap in Hugo',
-        href: 'how-to-customize-your-sitemap-in-hugo',
+        href: '/posts/how-to-customize-your-sitemap-in-hugo',
       },
     ],
   },

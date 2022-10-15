@@ -1,11 +1,11 @@
 ---
-title: "Go Basics - 4. Constants in Go"
-date: "2020-02-04"
-slug: "go-basics-4-constants-in-go"
-description: "In this article, we are going to explore how to work with constants in the Go (Golang) programming language."
-hero: "/images/hero/Golang-Basics.png"
-tags: ["go-basics"]
-layout: "../../layouts/BlogPostLayout.astro"
+title: 'Go Basics - 4. Constants in Go'
+date: '2020-02-04'
+slug: 'go-basics-4-constants-in-go'
+description: 'In this article, we are going to explore how to work with constants in the Go (Golang) programming language.'
+hero: '/images/hero/Golang-Basics.png'
+tags: ['go-basics']
+layout: '../../layouts/BlogPostLayout.astro'
 ---
 
 In this article, we are going to explore how to work with constants in the Go programming language. We will discuss the
@@ -59,7 +59,7 @@ func main() {
 */
 ```
 
-Interestingly, `constants` in Go can be `shadowed` just like [variables](/go-basics-2-variables-in-go).
+Interestingly, `constants` in Go can be `shadowed` just like [variables](/posts/go-basics-2-variables-in-go).
 
 ```go
 package main

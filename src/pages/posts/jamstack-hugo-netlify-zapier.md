@@ -29,7 +29,7 @@ Hugo new site blog
 
 _**If you are like me, you probably already have a directory where all of your web/code projects live on your computer. I have a folder called `Projects` on my laptop, which contains all of my projects. I recommend you have something similar on your machine and install it there.**_
 
-We are going to be using a pre-configured theme for Hugo called [Ink](https://themes.gohugo.io/hugo-ink/). You can
+We are going to be using a pre-configured theme for Hugo called [Ink](https://github.com/knadh/hugo-ink). You can
 download the theme from Github [here](https://github.com/knadh/hugo-ink). Click on the green button called "Code" and then "Download Zip."
 
 ![Ink GitHub Download](/images/jamstack-hugo-blog/ink_github_download.webp)

@@ -1,11 +1,11 @@
 ---
-title: "How to become a front end developer"
-date: "2020-03-20"
-slug: "how-to-become-a-front-end-developer"
-description: "All of the technologies you will need to know in order to become a front-end developer. All of the resources are free!"
-hero: "/images/hero/backend-front-end.png"
-tags: ["front-end"]
-layout: "../../layouts/BlogPostLayout.astro"
+title: 'How to become a front end developer'
+date: '2020-03-20'
+slug: 'how-to-become-a-front-end-developer'
+description: 'All of the technologies you will need to know in order to become a front-end developer. All of the resources are free!'
+hero: '/images/hero/backend-front-end.png'
+tags: ['front-end']
+layout: '../../layouts/BlogPostLayout.astro'
 ---
 
 ## Text Editor
@@ -24,20 +24,17 @@ In this section, you are going to learn HTML. HTML is the backbone of the web. I
 
 ## CSS
 
-You have already learned a lot about CSS in Shay Howe's course, but I am going to suggest some additional courses/resources for learning flexbox.
+You have already learned a lot about CSS in Shay Howe's course, but I am going to suggest some additional courses/resources for learning flexbox & CSS grid.
 
-[**What The Flexbox?!**](https://flexbox.io/)
-
-**[Flexbox Zombies](https://flexboxzombies.com/p/flexbox-zombies)**
+- [What The Flexbox](https://flexbox.io/)
+- [CSS Grid](https://cssgrid.io/)
 
 ## JavaScript
 
-JavaScript is the single most important language you need to know as a Front-End developer. I **strongly** advise you to take them in the order listed below.
+JavaScript is the single most important language you need to know as a Front-End developer.
 
-1. [**Practical JavaScript**](https://watchandcode.com/p/practical-javascript)
-2. [**Eloquent JavaScript**](http://eloquentjavascript.net/)
-3. [**JavaScript 30**](https://javascript30.com/)
-4. [**You Don't Know JS**](https://github.com/getify/You-Dont-Know-JS/blob/master/README.md)
+- [Beginner JavaScript](https://beginnerjavascript.com/)
+- [**JavaScript 30**](https://javascript30.com/)
 
 ## Helpful Resources:
 

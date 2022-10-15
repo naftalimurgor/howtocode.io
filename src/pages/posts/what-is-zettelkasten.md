@@ -118,7 +118,7 @@ Luhmann would typically work on several books at the same time, which is why he 
 This article really only scratches the surface as the proverbial "rabbit hole" goes quite deep when it comes to Zettelkasten, Personal Knowledge Management, Building a Second brain, etc. If you want to take the "red pill" and go deeper, here are some great resources:
 
 - [https://zettelkasten.de/](https://zettelkasten.de/introduction/#luhmann-s-zettelkasten)
-- [How to Take Smart Notes by Sönke Ahrens](https://www.amazon.com/How-Take-Smart-Notes-Nonfiction-ebook/dp/B06WVYW33Y)
+- [How to Take Smart Notes by Sönke Ahrens](https://www.amazon.com/How-Take-Smart-Notes-Technique/dp/3982438802/5)
 - [Andy Matuschak's Notes](https://notes.andymatuschak.org/Evergreen_notes)
 - [YouTube - Linking Your Thinking](https://www.youtube.com/channel/UC85D7ERwhke7wVqskV_DZUA)
 - [YouTube - Bryan Jenks](https://www.youtube.com/channel/UCfhSB16X9MXhzSFe_H7XbHg)
