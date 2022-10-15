@@ -1,11 +1,11 @@
 ---
-title: "Understanding Scope and Closures in Javascript"
-date: "2020-02-03"
-slug: "understanding-closures-in-javascript"
-description: "Learn and understand how scope and closures work in JavaScript."
-hero: "/images/hero/javascript-logo-banner.jpg"
-tags: ["javascript"]
-layout: "../../layouts/BlogPostLayout.astro"
+title: 'Understanding Scope and Closures in Javascript'
+date: '2020-02-03'
+slug: 'understanding-closures-in-javascript'
+description: 'Learn and understand how scope and closures work in JavaScript.'
+hero: '/images/hero/javascript-logo-banner.jpg'
+tags: ['javascript']
+layout: '../../layouts/BlogPostLayout.astro'
 ---
 
 Closures are one of the more 'advanced' topics in JavaScript, and there is much confusion around them. I think a large part of the confusion comes from trying to explain what they are with too many technical details.
@@ -27,7 +27,7 @@ The way I like to think about `scope` is to ask myself a simple question, "Who h
 Let see an example:
 
 ```js
-var foo = "Hello World!";
+var foo = 'Hello World!'
 
 /*
   ... More code below ...
@@ -39,13 +39,13 @@ In this trivial example, the variable `foo` is declared in what is known as the 
 For example:
 
 ```js
-var foo = "Hello World!";
+var foo = 'Hello World!'
 
 function greeting() {
-  console.log(foo);
+  console.log(foo)
 }
 
-greeting();
+greeting()
 
 /*
   The result of the code above is: Hello World!
@@ -58,12 +58,12 @@ How about this:
 
 ```js
 function greeting() {
-  var foo = "Hello World!";
+  var foo = 'Hello World!'
 }
 
-greeting();
+greeting()
 
-console.log(foo);
+console.log(foo)
 
 /*
   The result of the code above is: Uncaught ReferenceError: foo is not defined
@@ -80,19 +80,19 @@ If we take that same example and now do this:
 
 ```js
 function greeting() {
-  foo = "Hello World!";
+  foo = 'Hello World!'
 }
 
-greeting();
+greeting()
 
-console.log(foo);
+console.log(foo)
 
 /*
   The result of the code above is: Hello World!
 */
 ```
 
-This is because of hoisting. To better understand hoisting, check out my article on [Understanding Hoisting in JavaScript](/understanding-hoisting-in-javascript/)
+This is because of hoisting. To better understand hoisting, check out my article on [Understanding Hoisting in JavaScript](/posts/understanding-hoisting-in-javascript/)
 
 ---
 
@@ -102,16 +102,16 @@ Now that we have a better understanding of `scope` let's look at an example of a
 
 ```js
 function speak() {
-  var message = "Hello World!";
+  var message = 'Hello World!'
 
   function say() {
-    console.log(message);
+    console.log(message)
   }
 
-  say();
+  say()
 }
 
-speak();
+speak()
 
 /*
   The result of the code above is: Hello World!
@@ -134,17 +134,17 @@ Let's take a look at another example:
 
 ```js
 function speak() {
-  var message = "Hello World!";
+  var message = 'Hello World!'
 
   function say() {
-    console.log(message);
+    console.log(message)
   }
 
-  return say;
+  return say
 }
 
-var greeting = speak();
-greeting();
+var greeting = speak()
+greeting()
 
 /*
   The result of the code above is: Hello World!
