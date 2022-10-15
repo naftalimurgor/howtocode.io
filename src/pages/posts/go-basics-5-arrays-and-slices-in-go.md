@@ -1,11 +1,11 @@
 ---
-title: "Go Basics - 5. Arrays & Slices in Go"
-date: "2020-02-05"
-slug: "go-basics-5-arrays-and-slices-in-go"
-description: "In this article, we are going to explore how to work with arrays & slices in the Go (Golang) programming language."
-hero: "/images/hero/Golang-Basics.png"
-tags: ["go-basics"]
-layout: "../../layouts/BlogPostLayout.astro"
+title: 'Go Basics - 5. Arrays & Slices in Go'
+date: '2020-02-05'
+slug: 'go-basics-5-arrays-and-slices-in-go'
+description: 'In this article, we are going to explore how to work with arrays & slices in the Go (Golang) programming language.'
+hero: '/images/hero/Golang-Basics.png'
+tags: ['go-basics']
+layout: '../../layouts/BlogPostLayout.astro'
 ---
 
 In this article, we are going to explore how to work with arrays & slices in the Go programming language.
@@ -218,7 +218,7 @@ func main() {
 */
 ```
 
-If you need to modify the original array, you can use a `pointer`. You can learn more about pointers in [Go Basics - 10. Pointers in Go](/go-basics-10-pointers-in-go).
+If you need to modify the original array, you can use a `pointer`. You can learn more about pointers in [Go Basics - 10. Pointers in Go](/posts/go-basics-10-pointers-in-go).
 
 ```go
 package main
