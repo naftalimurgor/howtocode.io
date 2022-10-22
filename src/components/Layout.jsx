@@ -4,7 +4,7 @@ import { useRouter } from 'next/router'
 import clsx from 'clsx'
 
 import { Hero } from '@/components/Hero'
-import { Logo, Logomark } from '@/components/Logo'
+import { Logo } from '@/components/Logo'
 import { MobileNavigation } from '@/components/MobileNavigation'
 import { Navigation } from '@/components/Navigation'
 import { Prose } from '@/components/Prose'
@@ -12,6 +12,7 @@ import { Search } from '@/components/Search'
 import { ThemeSelector } from '@/components/ThemeSelector'
 import { navigation } from '@/data/navigation.js'
 import { lightBox } from '@/scripts/lightbox'
+import StructuredData from 'src/components/StructuredData'
 
 function GitHubIcon(props) {
   return (
@@ -155,6 +156,10 @@ export function Layout({ children, title, tableOfContents }) {
     section.links.find((link) => link.href === router.pathname)
   )
   let currentSection = useTableOfContents(tableOfContents)
+  let frontMatter = children.props.markdoc.frontmatter
+  let postImage = frontMatter.hero
+    ? `https://howtocode.io${frontMatter.hero}`
+    : ''
 
   useEffect(() => {
     lightBox()
@@ -170,8 +175,36 @@ export function Layout({ children, title, tableOfContents }) {
     return section.children.findIndex(isActive) > -1
   }
 
+  const structuredData = {
+    '@context': 'https://schema.org',
+    '@type': 'Article',
+    mainEntityOfPage: {
+      '@type': 'WebPage',
+      '@id': `https://howtocode.io${router.route}`,
+    },
+    headline: frontMatter.title,
+    description: frontMatter.description,
+    image: postImage,
+    datePublished: frontMatter.date,
+    author: [
+      {
+        '@type': 'Person',
+        name: 'Robert Guss',
+      },
+    ],
+    publisher: {
+      '@type': 'Organization',
+      name: 'How to Code',
+      logo: {
+        '@type': 'ImageObject',
+        url: 'https://howtocode.io/images/podcast/podcast-cover.png',
+      },
+    },
+  }
+
   return (
     <>
+      <StructuredData data={structuredData} />
       <Header navigation={navigation} />
 
       {isHomePage && <Hero />}
