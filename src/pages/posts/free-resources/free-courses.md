@@ -1,6 +1,6 @@
 ---
 title: 'Free Courses'
-date: ''
+date: '2022-10-22'
 slug: 'free-courses'
 description: 'Free web development courses'
 ---

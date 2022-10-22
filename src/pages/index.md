@@ -3,6 +3,7 @@ title: Welcome to How to Code
 pageTitle: How to Code
 description: Free tutorials, books, and courses on web development, programming, and computer science.
 hero: /images/logo/HowToCode_OpenGraph_1200_630.png
+date: '2022-10-22'
 ---
 
 Free tutorials, books, and courses on web development, programming, and computer science. {% .lead %}

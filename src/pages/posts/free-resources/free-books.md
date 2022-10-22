@@ -1,6 +1,6 @@
 ---
 title: 'Free Books'
-date: ''
+date: '2022-10-22'
 slug: 'free-books'
 description: 'Free web development books'
 ---
