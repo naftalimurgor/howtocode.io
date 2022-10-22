@@ -10,9 +10,8 @@ jobs:
     steps:
       - uses: actions/checkout@v2
       - uses: darrenjennings/algolia-docsearch-action@master
-        run: echo "GitHub Workspace - $GITHUB_WORKSPACE"
         with:
           algolia_api_key: ${{ secrets.ALGOLIA_API_KEY }}
           algolia_application_id: ${{ secrets.ALGOLIA_APPLICATION_ID }}
           # needs to be inside $GITHUB_WORKSPACE from actions/checkout step
-          file: $GITHUB_WORKSPACE/src/algolia/config.json
+          file: 'src/algolia/config.json'
