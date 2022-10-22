@@ -93,8 +93,8 @@ export default function App({ Component, pageProps }) {
         canonical="https://www.howtocode.io"
         openGraph={{
           url: `https://howtocode.io${router.route}`,
-          title: { pageTitle },
-          description: { description },
+          title: `${pageTitle}`,
+          description: `${description}`,
           images: [{ url: `https://howtocode.io${heroImage}` }],
           site_name: 'How to Code',
         }}
@@ -104,9 +104,6 @@ export default function App({ Component, pageProps }) {
           cardType: 'summary_large_image',
         }}
       />
-      <Layout title={title} tableOfContents={tableOfContents}>
-        <Component {...pageProps} />
-      </Layout>
       <ArticleJsonLd
         type="Blog"
         url={`https://howtocode.io${router.route}`}
@@ -117,6 +114,9 @@ export default function App({ Component, pageProps }) {
         authorName="Robert Guss"
         description={description}
       />
+      <Layout title={title} tableOfContents={tableOfContents}>
+        <Component {...pageProps} />
+      </Layout>
     </>
   )
 }
