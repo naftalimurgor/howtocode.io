@@ -16,6 +16,61 @@
       "selectors_key": "astro",
       "tags": ["astro"]
     },
+    {
+      "url": "https://www.howtocode.io/posts/go/",
+      "selectors_key": "go",
+      "tags": ["go"]
+    },
+    {
+      "url": "https://www.howtocode.io/posts/elixir/",
+      "selectors_key": "elixir",
+      "tags": ["elixir"]
+    },
+    {
+      "url": "https://www.howtocode.io/posts/cypress/",
+      "selectors_key": "cypress",
+      "tags": ["cypress"]
+    },
+    {
+      "url": "https://www.howtocode.io/posts/writing-pkm/",
+      "selectors_key": "writing-pkm",
+      "tags": ["writing-pkm"]
+    },
+    {
+      "url": "https://www.howtocode.io/posts/career-advice/",
+      "selectors_key": "career-advice",
+      "tags": ["career-advice"]
+    },
+    {
+      "url": "https://www.howtocode.io/posts/jamstack/",
+      "selectors_key": "jamstack",
+      "tags": ["jamstack"]
+    },
+    {
+      "url": "https://www.howtocode.io/posts/adonis-js/",
+      "selectors_key": "adonis-js",
+      "tags": ["adonis-js"]
+    },
+    {
+      "url": "https://www.howtocode.io/posts/tailwind-css/",
+      "selectors_key": "tailwind-css",
+      "tags": ["tailwind-css"]
+    },
+    {
+      "url": "https://www.howtocode.io/posts/statamic/",
+      "selectors_key": "statamic",
+      "tags": ["statamic"]
+    },
+    {
+      "url": "https://www.howtocode.io/posts/hugo/",
+      "selectors_key": "hugo",
+      "tags": ["hugo"]
+    },
+    {
+      "url": "https://www.howtocode.io/posts/javascript/",
+      "selectors_key": "javascript",
+      "tags": ["javascript"]
+    },
     "https://www.howtocode.io/"
   ],
   "sitemap_urls": ["https://www.howtocode.io/sitemap-0.xml"],
@@ -46,6 +101,127 @@
       "lvl0": {
         "selector": "",
         "default_value": "Astro"
+      },
+      "lvl1": ".main-content header h1",
+      "lvl2": ".main-content .prose h2",
+      "lvl3": ".main-content .prose h3",
+      "lvl4": ".main-content .prose h4",
+      "text": ".main-content .prose p,.main-content .prose li"
+    },
+    "go": {
+      "lvl0": {
+        "selector": "",
+        "default_value": "Go"
+      },
+      "lvl1": ".main-content header h1",
+      "lvl2": ".main-content .prose h2",
+      "lvl3": ".main-content .prose h3",
+      "lvl4": ".main-content .prose h4",
+      "text": ".main-content .prose p,.main-content .prose li"
+    },
+    "elixir": {
+      "lvl0": {
+        "selector": "",
+        "default_value": "Elixir"
+      },
+      "lvl1": ".main-content header h1",
+      "lvl2": ".main-content .prose h2",
+      "lvl3": ".main-content .prose h3",
+      "lvl4": ".main-content .prose h4",
+      "text": ".main-content .prose p,.main-content .prose li"
+    },
+    "cypress": {
+      "lvl0": {
+        "selector": "",
+        "default_value": "Cypress"
+      },
+      "lvl1": ".main-content header h1",
+      "lvl2": ".main-content .prose h2",
+      "lvl3": ".main-content .prose h3",
+      "lvl4": ".main-content .prose h4",
+      "text": ".main-content .prose p,.main-content .prose li"
+    },
+    "writing-pkm": {
+      "lvl0": {
+        "selector": "",
+        "default_value": "Writing & PKM"
+      },
+      "lvl1": ".main-content header h1",
+      "lvl2": ".main-content .prose h2",
+      "lvl3": ".main-content .prose h3",
+      "lvl4": ".main-content .prose h4",
+      "text": ".main-content .prose p,.main-content .prose li"
+    },
+    "career-advice": {
+      "lvl0": {
+        "selector": "",
+        "default_value": "Career Advice"
+      },
+      "lvl1": ".main-content header h1",
+      "lvl2": ".main-content .prose h2",
+      "lvl3": ".main-content .prose h3",
+      "lvl4": ".main-content .prose h4",
+      "text": ".main-content .prose p,.main-content .prose li"
+    },
+    "jamstack": {
+      "lvl0": {
+        "selector": "",
+        "default_value": "Jamstack"
+      },
+      "lvl1": ".main-content header h1",
+      "lvl2": ".main-content .prose h2",
+      "lvl3": ".main-content .prose h3",
+      "lvl4": ".main-content .prose h4",
+      "text": ".main-content .prose p,.main-content .prose li"
+    },
+    "adonis-js": {
+      "lvl0": {
+        "selector": "",
+        "default_value": "Adonis JS"
+      },
+      "lvl1": ".main-content header h1",
+      "lvl2": ".main-content .prose h2",
+      "lvl3": ".main-content .prose h3",
+      "lvl4": ".main-content .prose h4",
+      "text": ".main-content .prose p,.main-content .prose li"
+    },
+    "tailwind-css": {
+      "lvl0": {
+        "selector": "",
+        "default_value": "Tailwind CSS"
+      },
+      "lvl1": ".main-content header h1",
+      "lvl2": ".main-content .prose h2",
+      "lvl3": ".main-content .prose h3",
+      "lvl4": ".main-content .prose h4",
+      "text": ".main-content .prose p,.main-content .prose li"
+    },
+    "statamic": {
+      "lvl0": {
+        "selector": "",
+        "default_value": "Statamic"
+      },
+      "lvl1": ".main-content header h1",
+      "lvl2": ".main-content .prose h2",
+      "lvl3": ".main-content .prose h3",
+      "lvl4": ".main-content .prose h4",
+      "text": ".main-content .prose p,.main-content .prose li"
+    },
+    "hugo": {
+      "lvl0": {
+        "selector": "",
+        "default_value": "Hugo"
+      },
+      "lvl1": ".main-content header h1",
+      "lvl2": ".main-content .prose h2",
+      "lvl3": ".main-content .prose h3",
+      "lvl4": ".main-content .prose h4",
+      "text": ".main-content .prose p,.main-content .prose li"
+    },
+    "javascript": {
+      "lvl0": {
+        "selector": "",
+        "default_value": "JavaScript"
       },
       "lvl1": ".main-content header h1",
       "lvl2": ".main-content .prose h2",
