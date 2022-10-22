@@ -156,10 +156,8 @@ export function Layout({ children, title, tableOfContents }) {
     section.links.find((link) => link.href === router.pathname)
   )
   let currentSection = useTableOfContents(tableOfContents)
-  let frontMatter = children.props.markdoc.frontmatter
-  let postImage = frontMatter.hero
-    ? `https://howtocode.io${frontMatter.hero}`
-    : ''
+  let markDock = children.props.markdoc || null
+  let structuredData
 
   useEffect(() => {
     lightBox()
@@ -175,31 +173,38 @@ export function Layout({ children, title, tableOfContents }) {
     return section.children.findIndex(isActive) > -1
   }
 
-  const structuredData = {
-    '@context': 'https://schema.org',
-    '@type': 'Article',
-    mainEntityOfPage: {
-      '@type': 'WebPage',
-      '@id': `https://howtocode.io${router.route}`,
-    },
-    headline: frontMatter.title,
-    description: frontMatter.description,
-    image: postImage,
-    datePublished: frontMatter.date,
-    author: [
-      {
-        '@type': 'Person',
-        name: 'Robert Guss',
+  if (markDock) {
+    let frontMatter = markDock.frontmatter
+    let postImage = frontMatter.hero
+      ? `https://howtocode.io${frontMatter.hero}`
+      : ''
+
+    structuredData = {
+      '@context': 'https://schema.org',
+      '@type': 'Article',
+      mainEntityOfPage: {
+        '@type': 'WebPage',
+        '@id': `https://howtocode.io${router.route}`,
       },
-    ],
-    publisher: {
-      '@type': 'Organization',
-      name: 'How to Code',
-      logo: {
-        '@type': 'ImageObject',
-        url: 'https://howtocode.io/images/podcast/podcast-cover.png',
+      headline: frontMatter.title,
+      description: frontMatter.description,
+      image: postImage,
+      datePublished: frontMatter.date,
+      author: [
+        {
+          '@type': 'Person',
+          name: 'Robert Guss',
+        },
+      ],
+      publisher: {
+        '@type': 'Organization',
+        name: 'How to Code',
+        logo: {
+          '@type': 'ImageObject',
+          url: 'https://howtocode.io/images/podcast/podcast-cover.png',
+        },
       },
-    },
+    }
   }
 
   return (
