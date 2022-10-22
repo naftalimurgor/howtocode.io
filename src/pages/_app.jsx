@@ -4,6 +4,7 @@ import * as ga from '@/utils/ga'
 import { useEffect } from 'react'
 import { useRouter } from 'next/router'
 import { Layout } from '@/components/Layout'
+import { NextSeo, ArticleJsonLd } from 'next-seo'
 
 import 'focus-visible'
 import '@/styles/tailwind.css'
@@ -75,6 +76,10 @@ export default function App({ Component, pageProps }) {
     `${pageProps.markdoc?.frontmatter.title} | How to Code`
 
   let description = pageProps.markdoc?.frontmatter.description
+  let date = pageProps.markdoc?.frontmatter.date
+  let heroImage =
+    pageProps.markdoc?.frontmatter.hero ||
+    'https://howtocode.io/images/logo/HowToCode_OpenGraph_1200_630.png'
 
   let tableOfContents = pageProps.markdoc?.content
     ? collectHeadings(pageProps.markdoc.content)
@@ -82,13 +87,36 @@ export default function App({ Component, pageProps }) {
 
   return (
     <>
-      <Head>
-        <title>{pageTitle}</title>
-        {description && <meta name="description" content={description} />}
-      </Head>
+      <NextSeo
+        title={pageTitle}
+        description={description}
+        canonical="https://www.howtocode.io"
+        openGraph={{
+          url: `https://howtocode.io${router.route}`,
+          title: { pageTitle },
+          description: { description },
+          images: [{ url: `https://howtocode.io${heroImage}` }],
+          site_name: 'How to Code',
+        }}
+        twitter={{
+          handle: '@howtocode_io',
+          site: '@howtocode_io',
+          cardType: 'summary_large_image',
+        }}
+      />
       <Layout title={title} tableOfContents={tableOfContents}>
         <Component {...pageProps} />
       </Layout>
+      <ArticleJsonLd
+        type="Blog"
+        url={`https://howtocode.io${router.route}`}
+        title={pageTitle}
+        images={`https://howtocode.io${heroImage}`}
+        datePublished={date}
+        dateModified={date}
+        authorName="Robert Guss"
+        description={description}
+      />
     </>
   )
 }
