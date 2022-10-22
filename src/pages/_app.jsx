@@ -104,7 +104,7 @@ export default function App({ Component, pageProps }) {
           cardType: 'summary_large_image',
         }}
       />
-      <ArticleJsonLd
+      {/* <ArticleJsonLd
         type="Blog"
         url={`https://howtocode.io${router.route}`}
         title={pageTitle}
@@ -113,7 +113,7 @@ export default function App({ Component, pageProps }) {
         dateModified={date}
         authorName="Robert Guss"
         description={description}
-      />
+      /> */}
       <Layout title={title} tableOfContents={tableOfContents}>
         <Component {...pageProps} />
       </Layout>
