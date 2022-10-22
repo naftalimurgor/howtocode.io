@@ -1,0 +1,91 @@
+{
+  "index_name": "prod_howtocode",
+  "start_urls": [
+    {
+      "url": "https://www.howtocode.io/docs/overview/",
+      "selectors_key": "overview",
+      "tags": ["overview"]
+    },
+    "https://www.howtocode.io"
+  ],
+  "sitemap_urls": ["https://www.howtocode.io/sitemap-0.xml"],
+  "selectors": {
+    "overview": {
+      "lvl0": {
+        "selector": "",
+        "default_value": "Overview"
+      },
+      "lvl1": ".main-content header h1",
+      "lvl2": ".main-content .prose h2",
+      "lvl3": ".main-content .prose h3",
+      "lvl4": ".main-content .prose h4",
+      "text": ".main-content .prose p,.main-content .prose li"
+    },
+    "tutorials": {
+      "lvl0": {
+        "selector": "",
+        "default_value": "Tutorials"
+      },
+      "lvl1": ".main-content header h1",
+      "lvl2": ".main-content .prose h2",
+      "lvl3": ".main-content .prose h3",
+      "lvl4": ".main-content .prose h4",
+      "text": ".main-content .prose p,.main-content .prose li"
+    },
+    "faq": {
+      "lvl0": {
+        "selector": "",
+        "default_value": "FAQ's"
+      },
+      "lvl1": ".main-content header h1",
+      "lvl2": ".main-content .prose h2",
+      "lvl3": ".main-content .prose h3",
+      "lvl4": ".main-content .prose h4",
+      "text": ".main-content .prose p,.main-content .prose li"
+    },
+    "how-to": {
+      "lvl0": {
+        "selector": "",
+        "default_value": "How To"
+      },
+      "lvl1": ".main-content header h1",
+      "lvl2": ".main-content .prose h2",
+      "lvl3": ".main-content .prose h3",
+      "lvl4": ".main-content .prose h4",
+      "text": ".main-content .prose p,.main-content .prose li"
+    },
+    "reference": {
+      "lvl0": {
+        "selector": "",
+        "default_value": "Reference"
+      },
+      "lvl1": ".main-content header h1",
+      "lvl2": ".main-content .prose h2",
+      "lvl3": ".main-content .prose h3",
+      "lvl4": ".main-content .prose h4",
+      "text": ".main-content .prose p,.main-content .prose li"
+    },
+    "explanations": {
+      "lvl0": {
+        "selector": "",
+        "default_value": "Explanations"
+      },
+      "lvl1": ".main-content header h1",
+      "lvl2": ".main-content .prose h2",
+      "lvl3": ".main-content .prose h3",
+      "lvl4": ".main-content .prose h4",
+      "text": ".main-content .prose p,.main-content .prose li"
+    },
+    "default": {
+      "lvl0": {
+        "selector": "",
+        "default_value": "Documentation"
+      },
+      "lvl1": ".main-content header h1",
+      "lvl2": ".main-content .prose h2",
+      "lvl3": ".main-content .prose h3",
+      "lvl4": ".main-content .prose h4",
+      "text": ".main-content .prose p,.main-content .prose li"
+    }
+  }
+}
