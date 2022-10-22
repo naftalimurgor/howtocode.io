@@ -2,18 +2,28 @@
   "index_name": "prod_howtocode",
   "start_urls": [
     {
-      "url": "https://www.howtocode.io/docs/overview/",
-      "selectors_key": "overview",
-      "tags": ["overview"]
+      "url": "https://www.howtocode.io/posts/free-resources/",
+      "selectors_key": "free-resources",
+      "tags": ["free-resources"]
     },
-    "https://www.howtocode.io"
+    {
+      "url": "https://www.howtocode.io/posts/next-js/",
+      "selectors_key": "next-js",
+      "tags": ["next-js"]
+    },
+    {
+      "url": "https://www.howtocode.io/posts/astro/",
+      "selectors_key": "astro",
+      "tags": ["astro"]
+    },
+    "https://www.howtocode.io/"
   ],
   "sitemap_urls": ["https://www.howtocode.io/sitemap-0.xml"],
   "selectors": {
-    "overview": {
+    "free-resources": {
       "lvl0": {
         "selector": "",
-        "default_value": "Overview"
+        "default_value": "Free Resources"
       },
       "lvl1": ".main-content header h1",
       "lvl2": ".main-content .prose h2",
@@ -21,10 +31,10 @@
       "lvl4": ".main-content .prose h4",
       "text": ".main-content .prose p,.main-content .prose li"
     },
-    "tutorials": {
+    "next-js": {
       "lvl0": {
         "selector": "",
-        "default_value": "Tutorials"
+        "default_value": "Next.js"
       },
       "lvl1": ".main-content header h1",
       "lvl2": ".main-content .prose h2",
@@ -32,43 +42,10 @@
       "lvl4": ".main-content .prose h4",
       "text": ".main-content .prose p,.main-content .prose li"
     },
-    "faq": {
+    "astro": {
       "lvl0": {
         "selector": "",
-        "default_value": "FAQ's"
-      },
-      "lvl1": ".main-content header h1",
-      "lvl2": ".main-content .prose h2",
-      "lvl3": ".main-content .prose h3",
-      "lvl4": ".main-content .prose h4",
-      "text": ".main-content .prose p,.main-content .prose li"
-    },
-    "how-to": {
-      "lvl0": {
-        "selector": "",
-        "default_value": "How To"
-      },
-      "lvl1": ".main-content header h1",
-      "lvl2": ".main-content .prose h2",
-      "lvl3": ".main-content .prose h3",
-      "lvl4": ".main-content .prose h4",
-      "text": ".main-content .prose p,.main-content .prose li"
-    },
-    "reference": {
-      "lvl0": {
-        "selector": "",
-        "default_value": "Reference"
-      },
-      "lvl1": ".main-content header h1",
-      "lvl2": ".main-content .prose h2",
-      "lvl3": ".main-content .prose h3",
-      "lvl4": ".main-content .prose h4",
-      "text": ".main-content .prose p,.main-content .prose li"
-    },
-    "explanations": {
-      "lvl0": {
-        "selector": "",
-        "default_value": "Explanations"
+        "default_value": "Astro"
       },
       "lvl1": ".main-content header h1",
       "lvl2": ".main-content .prose h2",
@@ -79,7 +56,7 @@
     "default": {
       "lvl0": {
         "selector": "",
-        "default_value": "Documentation"
+        "default_value": "Articles"
       },
       "lvl1": ".main-content header h1",
       "lvl2": ".main-content .prose h2",
