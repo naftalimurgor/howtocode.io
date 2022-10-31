@@ -1,10 +1,10 @@
-import Head from 'next/head'
 import { slugifyWithCounter } from '@sindresorhus/slugify'
 import * as ga from '@/utils/ga'
 import { useEffect } from 'react'
 import { useRouter } from 'next/router'
 import { Layout } from '@/components/Layout'
-import { NextSeo, ArticleJsonLd } from 'next-seo'
+import { NextSeo } from 'next-seo'
+import { Analytics } from '@vercel/analytics/react'
 
 import 'focus-visible'
 import '@/styles/tailwind.css'
@@ -116,6 +116,7 @@ export default function App({ Component, pageProps }) {
       /> */}
       <Layout title={title} tableOfContents={tableOfContents}>
         <Component {...pageProps} />
+        <Analytics />
       </Layout>
     </>
   )
