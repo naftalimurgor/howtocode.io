@@ -21,6 +21,15 @@ export const navigation = [
     ],
   },
   {
+    title: 'Recent Articles',
+    links: [
+      {
+        title: 'How to setup Algolia DocSearch',
+        href: '/posts/algolia/how-to-setup-algolia-doc-search',
+      },
+    ],
+  },
+  {
     title: 'Next.js (work in progress)',
     links: [
       {

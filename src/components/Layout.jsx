@@ -158,7 +158,7 @@ export function Layout({ children, title, tableOfContents }) {
     section.links.find((link) => link.href === router.pathname)
   )
   let currentSection = useTableOfContents(tableOfContents)
-  let markDock = children.props.markdoc || null
+  let markDock = children.props?.markdoc || null
   let structuredData
 
   useEffect(() => {
