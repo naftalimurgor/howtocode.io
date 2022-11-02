@@ -1,10 +1,10 @@
 ---
-title: "Real World Testing with Cypress"
-date: "2022-03-28"
-slug: "real-world-testing-with-cypress"
-description: "In this short article I give a brief overview of the Cypress Real World app, which is a payment application to demonstrate real-world usage of Cypress testing methods, patterns, and workflows"
-hero: "/images/hero/real-world-testing.png"
-tags: ["cypress"]
+title: 'Real World Testing with Cypress'
+date: '2022-03-28'
+slug: 'real-world-testing-with-cypress'
+description: 'In this short article I give a brief overview of the Cypress Real World app, which is a payment application to demonstrate real-world usage of Cypress testing methods, patterns, and workflows'
+hero: '/images/hero/real-world-testing.png'
+tags: ['cypress']
 ---
 
 ## Overview
@@ -41,7 +41,7 @@ Finally, we cover advanced Cypress concepts. In this course, we teach you how to
 
 ## Real World Examples
 
-![](/images/cypress-real-world-testing/overview.png)
+![](/images/cypress-real-world-testing/overview.webp)
 
 In addition, we have also prepared over 30+ examples of real-world tests against the [Real World App](https://github.com/cypress-io/cypress-realworld-app). This application has been around for a couple of years now, but since it contains some rather advanced concepts and examples, much of it was beyond reach for people just getting started. To solve this problem we have written in-depth articles for every example which explains line by line what each test is doing.
 
@@ -49,7 +49,7 @@ These examples put into practice all of the principals and concepts explained wi
 
 ## Tutorials
 
-![](/images/cypress-real-world-testing/Screen_Shot_2021-12-16_at_10.04.09_AM.png)
+![](/images/cypress-real-world-testing/Screen_Shot_2021-12-16_at_10.04.09_AM.webp)
 
 Finally, we aim to demonstrate how to test more real-world applications against various technologies and providers.
 
