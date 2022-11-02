@@ -1,11 +1,11 @@
 ---
-title: "Go Basics - 7. Structs in Go"
-date: "2020-02-07"
-slug: "go-basics-7-structs-in-go"
-description: "In this article, we are going to explore how to work with structs in the Go (Golang) programming language."
-hero: "/images/hero/Golang-Basics.png"
-tags: ["go-basics"]
-layout: "../../layouts/BlogPostLayout.astro"
+title: 'Go Basics - 7. Structs in Go'
+date: '2020-02-07'
+slug: 'go-basics-7-structs-in-go'
+description: 'In this article, we are going to explore how to work with structs in the Go (Golang) programming language.'
+hero: '/images/hero/Golang-Basics.png'
+tags: ['go-basics']
+layout: '../../layouts/BlogPostLayout.astro'
 ---
 
 In this article, we are going to explore how to work with structs in the Go programming language.
@@ -196,7 +196,7 @@ _**Notice how the types are separated with a semi-colon `;` instead of a comma `
 
 ## Structs are passed by value
 
-Structs are passed by `value`. Therefore, if you create a copy of one, and modify that copy, you won't alter the original; unlike [maps](/posts/go-basics-6-maps-in-go) or [slices](/posts/go-basics-5-arrays-and-slices-in-go) which are passed by `reference`.
+Structs are passed by `value`. Therefore, if you create a copy of one, and modify that copy, you won't alter the original; unlike [maps](/posts/go/go-basics-6-maps-in-go) or [slices](/posts/go/go-basics-5-arrays-and-slices-in-go) which are passed by `reference`.
 
 ```go
 package main
