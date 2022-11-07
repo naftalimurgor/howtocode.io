@@ -92,11 +92,11 @@ export default function App({ Component, pageProps }) {
         description={description}
         canonical="https://www.howtocode.io"
         openGraph={{
+          type: 'website',
           url: `https://howtocode.io${router.route}`,
           title: `${pageTitle}`,
           description: `${description}`,
           images: [{ url: `https://howtocode.io${heroImage}` }],
-          site_name: 'How to Code',
         }}
         twitter={{
           handle: '@howtocode_io',
