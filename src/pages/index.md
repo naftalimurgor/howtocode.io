@@ -1,5 +1,5 @@
 ---
-title: Welcome to How to Code
+title: How to Code - Free web development tutorials, books, courses
 pageTitle: How to Code
 description: Free tutorials, books, and courses on web development, programming, and computer science.
 hero: /images/logo/HowToCode_OpenGraph_1200_630.png
