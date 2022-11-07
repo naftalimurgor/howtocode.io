@@ -90,7 +90,7 @@ export default function App({ Component, pageProps }) {
       <NextSeo
         title={pageTitle}
         description={description}
-        canonical="https://www.howtocode.io"
+        canonical={`https://howtocode.io${router.route}`}
         openGraph={{
           type: 'website',
           url: `https://howtocode.io${router.route}`,
