@@ -24,6 +24,10 @@ export const navigation = [
     title: 'Recent Articles',
     links: [
       {
+        title: 'How to use environment variables in Cypress 10',
+        href: '/posts/cypress/cypress-10-environment-variables',
+      },
+      {
         title: 'How to setup Algolia DocSearch',
         href: '/posts/algolia/how-to-setup-algolia-doc-search',
       },
