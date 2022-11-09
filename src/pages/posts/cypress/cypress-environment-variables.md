@@ -1,13 +1,13 @@
 ---
-title: 'How to use environment variables in Cypress 10'
+title: 'How to use environment variables in Cypress'
 date: '2022-11-09'
-slug: 'how-to-use-environment-variables-in-cypress-10'
-description: 'This tutorial will teach you how to use environment variables from a `.env` file within your Cypress 10 tests.'
+slug: 'how-to-use-environment-variables-in-cypress'
+description: 'This tutorial will teach you how to use environment variables from a `.env` file within your Cypress tests.'
 hero: '/images/hero/real-world-app.png'
 tags: ['cypress']
 ---
 
-This tutorial will teach you how to use environment variables from a `.env` file within your Cypress 10 tests.
+This tutorial will teach you how to use environment variables from a `.env` file within your Cypress tests.
 
 ## .env file
 
@@ -104,7 +104,7 @@ cy.login(Cypress.env('loginEmail'), Cypress.env('loginPassword'))
 
 When you run your tests, Cypress will output the values you passed to the [type](https://docs.cypress.io/api/commands/type) command by default. This is usually not an issue, but if you are typing in sensitive information like a password, it will be logged to the command log like so:
 
-![Cypress type log true](/images/cypress-10-environment-variables/cypress-type-log-true.webp)
+![Cypress type log true](/images/cypress-environment-variables/cypress-type-log-true.webp)
 
 To hide sensitive information passed to the `cy.type()` command, you can pass `{ log: false }` like so:
 
@@ -113,7 +113,7 @@ cy.get('input[name=username]').type(email, { log: false })
 cy.get('input[name=password]').type(password, { log: false })
 ```
 
-![Cypress type log false](/images/cypress-10-environment-variables/cypress-type-log-false.webp)
+![Cypress type log false](/images/cypress-environment-variables/cypress-type-log-false.webp)
 
 ## Cypress Real World App
 
@@ -121,4 +121,4 @@ You can see more examples of how to use environment variables in the [Cypress Re
 
 ## Wrap up
 
-This tutorial taught you how to use environment variables from a `.env` file within your Cypress 10 tests. You also learned how to prevent Cypress from logging sensitive information passed to the [type](https://docs.cypress.io/api/commands/type) command.
+This tutorial taught you how to use environment variables from a `.env` file within your Cypress tests. You also learned how to prevent Cypress from logging sensitive information passed to the [type](https://docs.cypress.io/api/commands/type) command.
