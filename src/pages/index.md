@@ -10,9 +10,9 @@ Free tutorials, books, and courses on web development, programming, and computer
 
 {% quick-links %}
 
-{% quick-link title="Free Books" icon="installation" href="/posts/free-resources/free-books" description="Download Go Basics and Understanding the Jamstack for free." /%}
+{% quick-link title="Free Books" icon="installation" href="/posts/books" description="Download Go Basics and Understanding the Jamstack for free." /%}
 
-{% quick-link title="Free Courses" icon="presets" href="/posts/free-resources/free-courses" description="Free web development courses." /%}
+{% quick-link title="Free Courses" icon="presets" href="/posts/courses" description="Free web development courses." /%}
 
 {% quick-link title="Podcast" icon="plugins" href="https://anchor.fm/how-to-code" target="_blank" description="A podcast for aspiring web developers." /%}
 
