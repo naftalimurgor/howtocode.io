@@ -3,7 +3,7 @@ title: 'How to setup Algolia DocSearch'
 date: '2022-11-01'
 slug: 'how-to-setup-algolia-doc-search'
 description: 'In this tutorial you will learn how to setup, configure, and run your own Algolia DocSearch.'
-hero: '/images/hero/algolia-docsearch-banner.webp'
+hero: '/images/hero/algolia-docsearch-banner.jpg'
 tags: ['algolia']
 ---
 
