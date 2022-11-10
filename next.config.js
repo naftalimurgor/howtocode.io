@@ -12,6 +12,16 @@ const nextConfig = {
   async redirects() {
     return [
       {
+        source: '/books',
+        destination: '/posts/books',
+        permanent: true,
+      },
+      {
+        source: '/courses',
+        destination: '/posts/courses',
+        permanent: true,
+      },
+      {
         source: '/tutorials',
         destination: '/',
         permanent: true,
