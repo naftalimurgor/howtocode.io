@@ -114,7 +114,7 @@ export default function App({ Component, pageProps }) {
         authorName="Robert Guss"
         description={description}
       /> */}
-      <Layout title={title} tableOfContents={tableOfContents}>
+      <Layout title={title} date={date} tableOfContents={tableOfContents}>
         <Component {...pageProps} />
         <Analytics />
       </Layout>

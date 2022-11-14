@@ -147,7 +147,7 @@ function useTableOfContents(tableOfContents) {
   return currentSection
 }
 
-export function Layout({ children, title, tableOfContents }) {
+export function Layout({ children, title, date, tableOfContents }) {
   let router = useRouter()
   let isHomePage = router.pathname === '/'
   let allLinks = navigation.flatMap((section) => section.links)
@@ -240,9 +240,14 @@ export function Layout({ children, title, tableOfContents }) {
                   </p>
                 )}
                 {title && (
-                  <h1 className="font-display text-3xl tracking-tight text-slate-900 dark:text-white">
-                    {title}
-                  </h1>
+                  <>
+                    <h1 className="font-display text-3xl tracking-tight text-slate-900 dark:text-white">
+                      {title}
+                    </h1>
+                    <p className="text-sm text-gray-500">
+                      Updated: <time dateTime={date}>{date}</time>
+                    </p>
+                  </>
                 )}
               </header>
             )}
