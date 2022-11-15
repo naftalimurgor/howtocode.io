@@ -59,7 +59,7 @@ func main() {
 */
 ```
 
-Interestingly, `constants` in Go can be `shadowed` just like [variables](/posts/go/go-basics-2-variables-in-go).
+Interestingly, `constants` in Go can be `shadowed` just like [variables](/posts/go-basics-2-variables-in-go).
 
 ```go
 package main

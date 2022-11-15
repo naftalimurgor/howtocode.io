@@ -92,7 +92,7 @@ console.log(foo)
 */
 ```
 
-This is because of hoisting. To better understand hoisting, check out my article on [Understanding Hoisting in JavaScript](/posts/javascript/understanding-hoisting-in-javascript/)
+This is because of hoisting. To better understand hoisting, check out my article on [Understanding Hoisting in JavaScript](/posts/understanding-hoisting-in-javascript/)
 
 ---
 
