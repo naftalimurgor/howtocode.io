@@ -218,7 +218,7 @@ func main() {
 */
 ```
 
-If you need to modify the original array, you can use a `pointer`. You can learn more about pointers in [Go Basics - 10. Pointers in Go](/posts/go/go-basics-10-pointers-in-go).
+If you need to modify the original array, you can use a `pointer`. You can learn more about pointers in [Go Basics - 10. Pointers in Go](/posts/go-basics-10-pointers-in-go).
 
 ```go
 package main

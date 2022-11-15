@@ -19,7 +19,7 @@ In this article you will learn the following:
 
 ## Pages
 
-A page in Next.js is a React component placed inside of the `/pages` directory. To understand how this works, within the app you created in the [previous article](/posts/next-js/nextjs-install-and-overview), create a file called `posts.js` inside the `pages/directory`.
+A page in Next.js is a React component placed inside of the `/pages` directory. To understand how this works, within the app you created in the [previous article](/posts/nextjs-install-and-overview), create a file called `posts.js` inside the `pages/directory`.
 
 ![posts-file.png](/images/nextjs/nextjs-pages-and-pre-rendering/posts-file.webp)
 
